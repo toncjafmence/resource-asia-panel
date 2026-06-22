@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hth · 日常查询与对照</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f3ea;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2d2a24;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fefcf8;
+            border-radius: 28px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+            padding: 3rem 2.5rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #3b352e;
+            border-left: 4px solid #b7a48b;
+            padding-left: 1.2rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .hero-note {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #6b6053;
+            background: #f4efe7;
+            padding: 1.6rem 2rem;
+            border-radius: 18px;
+            margin-bottom: 2.4rem;
+            quotes: "“" "”" "‘" "’";
+        }
+
+        .hero-note::before {
+            content: "“";
+            font-size: 2.4rem;
+            color: #b7a48b;
+            margin-right: 0.3rem;
+        }
+
+        .hero-note::after {
+            content: "”";
+            font-size: 2.4rem;
+            color: #b7a48b;
+            margin-left: 0.3rem;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed #ddd6cb;
+            padding-bottom: 0.3rem;
+            color: #4d4439;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            text-align: justify;
+        }
+
+        .highlight-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.6rem 0 2rem 0;
+        }
+
+        .highlight-item {
+            flex: 1 1 200px;
+            background: #f8f4ed;
+            border-radius: 16px;
+            padding: 1.2rem 1.4rem;
+            border-left: 3px solid #cbb59b;
+        }
+
+        .highlight-item strong {
+            display: block;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #3b352e;
+            margin-bottom: 0.3rem;
+        }
+
+        .highlight-item span {
+            font-size: 0.95rem;
+            color: #5f5548;
+        }
+
+        .insight-block {
+            background: #f2ede4;
+            border-radius: 20px;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0;
+            border: 1px solid #e6ddd0;
+        }
+
+        .insight-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-mini {
+            margin: 2rem 0 1rem 0;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #4d4439;
+            margin-top: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-a {
+            margin-left: 0.8rem;
+            color: #5f5548;
+        }
+
+        .tip-box {
+            background: #eae3d9;
+            padding: 1.2rem 1.8rem;
+            border-radius: 18px;
+            font-size: 0.95rem;
+            color: #3b352e;
+            margin: 2rem 0;
+            border-left: 6px solid #b7a48b;
+        }
+
+        .inline-link {
+            color: #7c6b58;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a48b;
+            transition: border-bottom 0.2s;
+        }
+
+        .inline-link:hover {
+            border-bottom: 1px solid #5f4f3d;
+            color: #5f4f3d;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e0d6c9;
+            margin: 2.4rem 0 1rem 0;
+        }
+
+        .footer-note {
+            font-size: 0.9rem;
+            color: #8f8274;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .page {
+                padding: 2rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+                padding-left: 0.8rem;
+            }
+            .hero-note {
+                padding: 1rem 1.2rem;
+                font-size: 1rem;
+            }
+            .highlight-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>hth：日常查询、对照与延伸阅读</h1>
+
+        <div class="hero-note">
+            不是每一次打开都需要明确的目的。有时只是随手翻翻，对照一个说法，或者顺着某条线索延伸下去。
+        </div>
+
+        <p>
+            在使用 <a href="https://asia-panel-hth.com" class="inline-link">hth</a> 的过程中，慢慢养成了几种习惯：遇到不确定的术语，先查一遍；写东西卡壳了，翻翻面板里相关的条目，常常能接上思路；读到一篇长文，也会打开对照着看，有时反而能发现另一个角度。这些琐碎的动作，渐渐织成了日常的一部分。
+        </p>
+
+        <div class="section-title">几个经常使用的场景</div>
+
+        <div class="highlight-list">
+            <div class="highlight-item">
+                <strong>对照阅读</strong>
+                <span>打开面板，同时看两三个相关条目，比较表述之间的差异，比自己硬想效率高不少。</span>
+            </div>
+            <div class="highlight-item">
+                <strong>快速定位</strong>
+                <span>模糊记得一个说法，但记不清出处和细节，输入几个关键词就能回到上下文里。</span>
+            </div>
+            <div class="highlight-item">
+                <strong>随手延伸</strong>
+                <span>原本只是查一个概念，结果顺着链接或者相关项读了四五条，反而有了新的理解。</span>
+            </div>
+        </div>
+
+        <p>
+            这些场景听起来都不复杂，但正是这种不复杂，让它成为可以稳定依赖的工具——不需要学习成本，打开就是那个界面，查询、对照、关闭，节奏由自己控制。
+        </p>
+
+        <div class="insight-block">
+            <p style="margin-bottom:0.6rem;"><strong>一点使用上的体会</strong></p>
+            <p>
+                如果只是偶尔用一次，可能会觉得它和别的查询工具差别不大。但如果你有持续查阅、整理信息的习惯——不管是写作、学习还是做一点研究——慢慢就会发现，它的结构更适合在“半知半解”的状态下使用：不需要精确到关键词，模糊一点也能找到大致方向；不需要一次性读完，可以断断续续地翻看。这种宽松的节奏，反而让信息的吸收更自然。
+            </p>
+        </div>
+
+        <div class="section-title">FAQ 摘要 —— 几个常被问到的问题</div>
+
+        <div class="faq-mini">
+            <div class="faq-q">Q：需要注册或登录才能使用吗？</div>
+            <div class="faq-a">A：部分功能需要基础账户，但日常查询和对照阅读可以直接进入，门槛很低。</div>
+
+            <div class="faq-q">Q：内容更新频率如何？</div>
+            <div class="faq-a">A：保持定期更新，但更偏向于稳健的补充，而不是频繁变动。对于长期使用者来说，这种稳定性反而更友好。</div>
+
+            <div class="faq-q">Q：可以在移动设备上正常使用吗？</div>
+            <div class="faq-a">A：面板针对常见的屏幕尺寸做了适配，手机和平板上阅读、翻查基本没有障碍。</div>
+        </div>
+
+        <div class="tip-box">
+            <strong>一个小的提醒：</strong> 如果你习惯在阅读时做笔记，可以同时打开 <a href="https://asia-panel-hth.com" class="inline-link">hth</a> 和笔记软件，对照着记录。这样查到的内容更容易内化成自己的材料，而不仅仅是“看过一次”。
+        </div>
+
+        <p>
+            总的来说，它是那种不需要你特意腾出时间来“学”的工具。它就在那里，需要的时候打开，不需要的时候关掉。但如果你持续用它，它会在某种程度上改变你查阅和处理信息的方式——变得更从容，也更愿意顺着一条线索走下去。
+        </p>
+
+        <hr>
+
+        <div class="footer-note">
+            页面内容仅作日常使用场景的描述，不构成任何形式的承诺或引导。
+        </div>
+    </div>
+</body>
+</html>
